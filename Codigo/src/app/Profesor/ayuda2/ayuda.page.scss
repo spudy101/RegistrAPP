@@ -1,0 +1,78 @@
+.ampliar_ola {
+    background: #0099ff;
+    height: 12em;
+}
+
+
+.foto {
+    position: absolute;
+    left: 60%;
+    top: 15%;
+    width: 20%;
+}
+
+.foto2 {
+    position: absolute;
+    left: 3%;
+    top: 50%;
+    width: 20%;
+}
+
+.texto {
+    display: block;
+    width: 50%;
+    padding-top: 2em;
+}
+
+.texto h5 {
+    font-weight: 800;
+    font-size: 35px;
+    color: white;
+    margin-left:2em ;
+}
+
+.texto p {
+    font-weight: 400;
+    font-size: 25px;
+    color: white;
+    margin-left:3em ;
+  }
+
+.contenedor {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    margin-top: 2em;
+}
+
+.isquierda {
+    width: 30%;
+
+}
+
+.medio {
+    width: 30%;
+    margin-left: 5em;
+
+}
+
+.derecha {
+    width: 30%;
+    margin-left: 5em;
+
+}
+
+.contenedor h5 {
+    font-weight: 600;
+    font-size: 35px;
+    color: black;
+    margin: auto;
+}
+
+.contenedor p {
+    font-weight: 400;
+    font-size: 18px;
+    color: black;
+    width: 70%;
+    margin-top: 1em;
+}

@@ -1,0 +1,78 @@
+<ion-content>
+
+  <div class="body">
+
+    <div class="contenedor1"></div>
+
+    <div class="contenedor2">
+      <div class="titulo">
+        <ion-label>Login</ion-label>
+      </div>
+
+
+      <div class="contenedor">
+        <ion-item-sliding class="tabla">
+          <ion-item-options side="start">
+            <ion-item-option>
+              <ion-input type="text" placeholder="Ingrese su usuario"></ion-input>
+            </ion-item-option>
+          </ion-item-options>
+
+          <ion-item class="usuario" style="height:60px ;">
+            <div class="icono">
+              <img src="assets\icon\usuario.png" alt="">
+            </div>
+            <div class="texto">
+              <ion-label>Usuario</ion-label>
+            </div>
+          </ion-item>
+
+        </ion-item-sliding>
+
+        <div class="correcto" [routerLink]="['/home']">
+          <img src="assets\icon\flecha-correcta.png" alt="">
+        </div>
+
+        <ion-item-sliding class="tabla">
+          <ion-item-options side="start">
+            <ion-item-option>
+              <ion-input type="text" placeholder="Ingrese su contraseña"></ion-input>
+            </ion-item-option>
+          </ion-item-options>
+
+          <ion-item class="usuario">
+            <div class="icono">
+              <img src="assets\icon\contrasena.png" alt="">
+            </div>
+            <div class="texto">
+              <ion-label>Contraseña</ion-label>
+            </div>
+          </ion-item>
+
+        </ion-item-sliding>
+
+        <div class="olvidar">
+          <ion-label>Olvidaste tu contraseña?</ion-label>
+        </div>
+      </div>
+
+      <ion-row>
+        <ion-col size="12" class="registrarse" [routerLink]="['/registrarse']">
+          <div class="texto">
+            <ion-label>Registro</ion-label>
+          </div>
+        </ion-col>
+      </ion-row>
+
+      <div class="espacio">
+
+      </div>
+
+      <div class="espacio2">
+      </div>
+    </div>
+  </div>
+
+
+
+</ion-content>

@@ -1,0 +1,88 @@
+
+.ampliar_ola {
+    background: #0099ff;
+    height: 11em;
+
+}
+
+.foto {
+    position: absolute;
+    left: 60%;
+    top: 17%;
+    width: 20%;
+}
+
+.foto2 {
+    position: absolute;
+    left: 3%;
+    top: 55%;
+    width: 20%;
+}
+
+.texto {
+    display: block;
+    width: 40%;
+    padding-top: 2em;
+}
+
+.texto h5 {
+    font-weight: 800;
+    font-size: 35px;
+    color: white;
+    margin-left:2em ;
+}
+
+.buscador{
+    width: 40%; 
+    float:right ;
+    transform: translateY(-100%);
+    margin-right: 4em;
+}
+
+.texto p {
+    font-weight: 400;
+    font-size: 25px;
+    color: white;
+    margin-left:3em ;
+  }
+
+ion-card{
+    width: 90%;
+    margin: auto;
+    background: #f5d419;
+    box-shadow: 1px 1px 2px 2px gray;
+    margin-bottom: 1em;
+    border-bottom-left-radius: 25px;
+}
+
+.curso{
+    background: white;
+    margin-left: 13px;
+    height: 2%;
+    padding: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    border-bottom-left-radius: 25px;
+
+}
+
+.titulo{
+    font-weight: 600;
+    color: gray;
+    font-size: 20px;
+    margin-left: 15px;
+}
+
+p{
+    font-weight: 500;
+    color: black;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+.cantidad{
+    font-weight: 400;
+    color: rgb(172, 169, 169);
+    font-size: 15px;
+    margin-left: 20px;
+}

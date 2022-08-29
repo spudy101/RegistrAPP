@@ -1,0 +1,89 @@
+.ola {
+  .ampliar_ola {
+    background: #0099ff;
+    height: 15em;
+
+    .foto {
+      position: absolute;
+      left: 60%;
+      top: 20%;
+      width: 20%;
+    }
+
+    .texto {
+      position: absolute;
+      width: 30%;
+      left: 10%;
+      top: 15%;
+
+      h5 {
+        font-weight: 800;
+        font-size: 35px;
+        color: white;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      p {
+        font-weight: 400;
+        font-size: 20px;
+        color: white;
+      }
+    }
+  }
+
+}
+
+.foto2 {
+  float: left;
+  width: 14%;
+  margin-left: 5%;
+  margin-top: 10%;
+}
+
+.foto3 {
+  float: right;
+  width: 14%;
+  margin-right: 5%;
+  margin-top: 10%;
+}
+
+.generar_qr {
+  position: relative;
+
+  .cursos {
+    width: 25%;
+    position: absolute;
+    left: 25%;
+    bottom: 35%;
+    box-shadow: 1px 1px 1px 1px grey;
+  }
+
+  ion-button {
+    box-shadow: 1px 1px 1px 1px grey;
+    width: 15%;
+    position: absolute;
+    color: black;
+    background: #0099ff;
+    height: 50px;
+    left: 60%;
+    bottom: 35%;
+    border-radius: 25px;
+    font-weight: 600;
+  }
+
+}
+
+.QR {
+  width: 30%;
+  margin: auto;
+  margin-top: 3em;
+  float: none;
+  text-align: center;
+
+  h5{
+    font-weight: 800;
+    font-size: 35px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+}

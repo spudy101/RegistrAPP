@@ -1,0 +1,70 @@
+<ion-header [translucent]="true" class="ion-no-border">
+
+  <ion-toolbar>
+    <ion-buttons>
+      <img src="assets\icon\menu.png" alt="" (click)="openFirst()" style="margin-left: 10px;">
+    </ion-buttons>
+      <img src="assets\icon\volver.png" alt="" style="position: absolute; right: 20px; bottom: 10px;"
+       [routerLink]="['/home']">
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+
+  <div class="body">
+
+    <div class="contenedor1">
+      <div class="titulo">
+        <ion-label class="nombre">Configuraciones</ion-label>
+      </div>
+    </div> 
+
+
+    <div class="contenedor2">
+
+      <ion-label class="label">Seleccione alguna opcion...</ion-label>
+
+      <div class="contenedor_cartas">
+
+        <ion-row>
+          <ion-col>
+            <ion-card >
+              <img src="assets\icon\colores.png" alt="">
+              <icon-card-title>
+                Color fondo
+              </icon-card-title>
+            </ion-card>
+            <ion-card [routerLink]="['/ayuda']">
+              <img src="assets\icon\informacion.png" alt="">
+              <icon-card-title>
+                sobre la aplicacion
+              </icon-card-title>
+            </ion-card>
+          </ion-col>
+          <ion-col>
+            <ion-card [routerLink]="['/seguridad']">
+              <img src="assets\icon\proteger.png" alt="">
+              <icon-card-title>
+                Seguridad
+              </icon-card-title>
+            </ion-card>
+            <ion-card [routerLink]="['/home']">
+              <img src="assets\icon\casa.png" alt="">
+              <icon-card-title>
+                Home
+              </icon-card-title>
+            </ion-card>
+          </ion-col>
+        </ion-row>
+      </div>
+
+      <div class="espacio">
+
+      </div>
+      <div class="espacio2">
+
+      </div>
+    </div>
+  </div>
+</ion-content>
