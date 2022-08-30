@@ -1,64 +1,34 @@
-.ola {
-    overflow: hidden;
-
+.contenedorT {
+    display: flex;
+    margin-bottom: 4em;
 }
-
-.ampliar_ola {
-    background: #0099ff;
-    height: 16em;
-
-}
-
-svg {
-    margin: 0px 0px -120px 0px;
-}
-
 
 .texto {
-    display: block;
-    padding-top: 1em;
+    width: 60%;
 }
 
 .texto h5 {
     font-weight: 800;
-    font-size: 45px;
-    color: white;
+    font-size: 35px;
+    color: rgb(0, 0, 0);
+    margin-left: 2em;
 }
 
 .texto p {
     font-weight: 400;
-    font-size: 25px;
-    color: white;
+    font-size: 23px;
+    color: rgb(0, 0, 0);
+    margin-left: 3em;
 }
 
-.texto .foto {
-    position: absolute;
-    right: 25%;
-    top: 30%;
-    width: 20%;
+.foto {
+    margin-left: 3%;
+    transform: translateY(15%);
 }
 
-.texto {
-
-    width: 50%;
-    margin-left: 6em;
-    margin-bottom: 5em;
-    float: left;
-
-    h4 {
-        font-size: 52px;
-        font-weight: 1000;
-        color: black;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-    }
+.foto img {
+    width: 80%;
 }
-
-.nino {
-    width: 20%;
-    float: right;
-    margin-right: 10%;
-}
-
 
 .contra_actual {
     background: transparent;
@@ -70,10 +40,10 @@ svg {
     width: 40%;
     float: left;
     margin-left: 4%;
-    transform: translateY(-10%);
+    transform: translateY(-15%);
 }
 
-.foto {
+.fotousu {
     width: 100%;
     margin-bottom: 15px;
 
@@ -100,6 +70,7 @@ p {
     width: 50%;
     float: right;
     margin-right: 4%;
+    transform: translateY(5%);
 }
 
 .cambiar_contra {
@@ -156,6 +127,6 @@ p {
     color: black;
 }
 
-.espacio {
-    height: 2em;
-}
+.espacio{
+    height: 3em;
+  }

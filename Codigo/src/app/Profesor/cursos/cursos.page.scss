@@ -1,50 +1,36 @@
-
-.ampliar_ola {
-    background: #0099ff;
-    height: 11em;
-
-}
-
-.foto {
-    position: absolute;
-    left: 60%;
-    top: 17%;
-    width: 20%;
-}
-
-.foto2 {
-    position: absolute;
-    left: 3%;
-    top: 55%;
-    width: 20%;
+.contenedorT {
+    display: flex;
+    margin-bottom: 2em;
 }
 
 .texto {
-    display: block;
-    width: 40%;
-    padding-top: 2em;
+    width: 60%;
 }
 
 .texto h5 {
     font-weight: 800;
     font-size: 35px;
-    color: white;
-    margin-left:2em ;
-}
-
-.buscador{
-    width: 40%; 
-    float:right ;
-    transform: translateY(-100%);
-    margin-right: 4em;
+    color: rgb(0, 0, 0);
+    margin-left: 2em;
 }
 
 .texto p {
     font-weight: 400;
-    font-size: 25px;
-    color: white;
-    margin-left:3em ;
-  }
+    font-size: 23px;
+    color: rgb(0, 0, 0);
+    margin-left: 3em;
+}
+
+
+.buscador{
+    width: 40%; 
+    margin-right: 5em;
+    transform: translateY(50%);
+}
+
+.buscador ion-searchbar{
+    box-shadow: 1px 1px 1px 1px gray;
+}
 
 ion-card{
     width: 90%;
@@ -80,9 +66,14 @@ p{
     margin-top: 10px;
     margin-left: 15px;
 }
+
 .cantidad{
     font-weight: 400;
     color: rgb(172, 169, 169);
     font-size: 15px;
     margin-left: 20px;
 }
+
+.espacio{
+    height: 3em;
+  }

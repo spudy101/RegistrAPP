@@ -1,42 +1,35 @@
-.ampliar_ola {
-    background: #0099ff;
-    height: 12em;
 
-}
 
-.foto {
-    position: absolute;
-    left: 60%;
-    top: 18%;
-    width: 20%;
-}
-
-.foto2 {
-    position: absolute;
-    left: 3%;
-    top: 55%;
-    width: 20%;
+.contenedorT{
+    display: flex;
 }
 
 .texto {
-    display: block;
-    width: 50%;
-    padding-top: 2em;
+    width: 70%;
 }
 
 .texto h5 {
     font-weight: 800;
     font-size: 35px;
-    color: white;
+    color: black;
     margin-left: 2em;
 }
 
 .texto p {
     font-weight: 400;
-    font-size: 25px;
-    color: white;
+    font-size: 23px;
+    color: rgb(0, 0, 0);
     margin-left: 3em;
 }
+
+.foto {
+    margin-left: 5%;
+}
+
+.foto img{
+    width: 60%;
+}
+
 
 .tabla {
     width: 90%;
@@ -44,7 +37,6 @@
     box-shadow: 2px 10px 10px 5px rgb(83, 82, 82);
     border-top-right-radius: 25px;
     padding: 6px;
-
 
 }
 
@@ -88,4 +80,24 @@
     height: 60px;
     border-bottom: solid rgb(156, 156, 156) 1px;
     padding-top: 20px;
+}
+
+.botones{
+    display: flex;
+    margin-top: 3em;
+}
+
+.botones ion-button{
+    box-shadow: 1px 1px 1px 1px grey;
+    color: rgb(0, 0, 0);
+    background: #0099ff;
+    height: 50px;
+    border-radius: 25px;
+    font-weight: 500;
+    width: 15%;
+    margin-left: 24%;
+}
+
+.espacio{
+    height: 3em;
 }

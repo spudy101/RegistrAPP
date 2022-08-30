@@ -1,42 +1,32 @@
-.ampliar_ola {
-    background: #0099ff;
-    height: 12em;
-}
-
-
-.foto {
-    position: absolute;
-    left: 60%;
-    top: 15%;
-    width: 20%;
-}
-
-.foto2 {
-    position: absolute;
-    left: 3%;
-    top: 50%;
-    width: 20%;
+.contenedorT {
+    display: flex;
 }
 
 .texto {
-    display: block;
-    width: 50%;
-    padding-top: 2em;
+    width: 60%;
 }
 
 .texto h5 {
     font-weight: 800;
     font-size: 35px;
-    color: white;
-    margin-left:2em ;
+    color: black;
+    margin-left: 2em;
 }
 
 .texto p {
     font-weight: 400;
-    font-size: 25px;
-    color: white;
-    margin-left:3em ;
-  }
+    font-size: 23px;
+    color: rgb(0, 0, 0);
+    margin-left: 3em;
+}
+
+.foto {
+    margin-left: 5%;
+}
+
+.foto img {
+    width: 60%;
+}
 
 .contenedor {
     display: flex;
@@ -76,3 +66,7 @@
     width: 70%;
     margin-top: 1em;
 }
+
+.espacio{
+    height: 3em;
+  }
