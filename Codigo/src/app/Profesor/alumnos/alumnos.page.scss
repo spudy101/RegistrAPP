@@ -61,7 +61,7 @@
 
 }
 
-.cabesera ion-col {
+.cabesera .otros {
     height: 40px;
     color: black;
     text-align: center;
@@ -69,17 +69,34 @@
     font-weight: 600;
 }
 
+.cabesera .porcentaje{
+    height: 40px;
+    color: black;
+    text-align: center;
+    font-weight: 600;
+}
+
 .cuerpo {
     text-align: center;
 
-
 }
 
-.cuerpo ion-col {
+.cuerpo .otros {
     color: black;
     height: 60px;
     border-bottom: solid rgb(156, 156, 156) 1px;
     padding-top: 20px;
+}
+
+.cuerpo .estado {
+    color: black;
+    height: 60px;
+    border-bottom: solid rgb(156, 156, 156) 1px;
+    text-align: center;
+}
+
+.cuerpo .estado .cajas{
+    transform: translateY(-20%)
 }
 
 .botones{
@@ -93,7 +110,7 @@
     background: #0099ff;
     height: 50px;
     border-radius: 25px;
-    font-weight: 500;
+    font-weight: 600;
     width: 15%;
     margin-left: 24%;
 }
@@ -101,3 +118,6 @@
 .espacio{
     height: 3em;
 }
+
+
+

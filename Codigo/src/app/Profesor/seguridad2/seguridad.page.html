@@ -5,7 +5,7 @@
       <img src="assets\icon\menu.png" alt="" (click)="openMenu()" style="margin-left: 10px;">
     </ion-buttons>
     <img src="assets\icon\volver.png" alt="" style="position: absolute; right: 20px; bottom: 10px;"
-      [routerLink]="['/home']">
+      [routerLink]="['/generar-qr']">
   </ion-toolbar>
 </ion-header>
 
@@ -80,7 +80,7 @@
 
       <ion-input type="text" placeholder="Nueva contraseña"></ion-input>
 
-      <ion-button (click)="onClick()" expand="block" fill="clear" shape="round">
+      <ion-button (click)="presentAlert()" expand="block" fill="clear" shape="round">
         Guardar
       </ion-button>
     </div>
@@ -91,7 +91,7 @@
 
       <ion-input type="text" placeholder="Nuevo usuario"></ion-input>
 
-      <ion-button (click)="onClick()" expand="block" fill="clear" shape="round">
+      <ion-button (click)="presentAlert()" expand="block" fill="clear" shape="round">
         Guardar
       </ion-button>
     </div>

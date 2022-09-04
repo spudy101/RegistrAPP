@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MenuController } from '@ionic/angular';
+import { AlertController } from '@ionic/angular';
 
 @Component({
   selector: 'app-generar-qr',
@@ -7,8 +8,10 @@ import { MenuController } from '@ionic/angular';
   styleUrls: ['./generar-qr.page.scss'],
 })
 export class GenerarQrPage implements OnInit {
+  handlerMessage = '';
+  roleMessage = '';
 
-  constructor(private menu: MenuController) {
+  constructor(private menu: MenuController, private alertController: AlertController) {
   }
 
 
@@ -17,6 +20,35 @@ export class GenerarQrPage implements OnInit {
 
   openMenu(){
     this.menu.toggle("second")
+  }
+
+  async presentAlert() {
+    const alert = await this.alertController.create({
+      header: 'Alerta',
+      subHeader: 'clase:"PGY004D"',
+      message: '¿Quieres generar un QR?',
+      buttons: [
+        {
+          text: 'Cancelar',
+          role: 'cancel',
+          handler: () => {
+            this.handlerMessage = '';
+          },
+        },
+        {
+          text: 'confirmar',
+          role: 'confirm',
+          handler: () => {
+            this.handlerMessage = 'Escanea tu codigo Aqui';
+          },
+        },
+      ],
+    });
+
+    await alert.present();
+
+    const { role } = await alert.onDidDismiss();
+    this.roleMessage = `Dismissed with role: ${role}`;
   }
 
 }

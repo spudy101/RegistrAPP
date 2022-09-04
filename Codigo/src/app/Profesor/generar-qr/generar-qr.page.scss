@@ -5,39 +5,83 @@
 }
 
 .texto {
-  width: 70%;
+  width: 65%;
 }
 
 .texto h5 {
   font-weight: 800;
-  font-size: 35px;
+  font-size: 30px;
   color: black;
   margin-left: 2em;
 }
 
 .texto p {
   font-weight: 400;
-  font-size: 23px;
+  font-size: 20px;
   color: rgb(0, 0, 0);
   margin-left: 3em;
+  margin-top: 15px;
 }
 
 .texto .importante {
-  font-size: 23px;
-  color: rgb(0, 0, 0);
+  font-size: 20px;
+  color:black;
   margin-left: 3em;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  animation: zoom 0.5s;
+  animation-direction: alternate;
+  animation-timing-function: cubic-bezier(.5, 0.05, 1, .5);
+  animation-iteration-count:2;
+  animation-delay: 3s;
+  animation-duration: 1s
+}
+
+@keyframes zoom {
+  from {
+    transition: 1s ease;
+  }
+  to {
+    transform : scale(1.1);
+  }
 }
 
 .foto {
-  margin-left: 5%;
-  transform: translateY(25%);
+  margin-left: 10%;
+
+  animation: bounce 0.5s;
+  animation-direction: alternate;
+  animation-timing-function: cubic-bezier(.5, 0.05, 1, .5);
+  animation-iteration-count:2;
+  animation-delay: 1s;
+  animation-duration: 1s
+  
+}
+
+@keyframes bounce {
+  from {
+      transform: translate3d(0, 0, 0);
+  }
+  to {
+      transform: translate3d(0, 25px, 0);
+  }
+}
+
+
+@-webkit-keyframes bounce {
+  from {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+  }
+  to {
+      -webkit-transform: translate3d(0, 200px, 0);
+      transform: translate3d(0, 100px, 0);
+  }
 }
 
 .foto img{
   width: 70%;
-}
 
+}
 .seleccion{
   display: flex;
   width: 50%;
@@ -62,7 +106,7 @@ ion-button {
   background: #0099ff;
   height: 50px;
   border-radius: 25px;
-  font-weight: 500;
+  font-weight: 600;
   margin-left: 3em;
 }
 
@@ -76,7 +120,22 @@ ion-button {
 .foto2 {
   width: 14%;
   margin-top: 10em;
+  animation: isquierda 0.5s;
+  animation-direction: alternate;
+  animation-iteration-count:infinite;
+  animation-delay: 1s;
+  animation-duration: 0.5s
 }
+
+@keyframes isquierda {
+  from {
+      transform: translate3d(0, 0, 0);
+  }
+  to {
+      transform: translate3d(10px, 0, 0);
+  }
+}
+
 
 .QR {
   width: 50%;
@@ -95,6 +154,20 @@ ion-button {
 .foto3 {
   width: 14%;
   margin-top: 10em;
+  animation: derecha 0.5s;
+  animation-direction: alternate;
+  animation-iteration-count:infinite;
+  animation-delay: 1s;
+  animation-duration: 0.5s
+}
+
+@keyframes derecha {
+  from {
+      transform: translate3d(0, 0, 0);
+  }
+  to {
+      transform: translate3d(-10px, 0, 0);
+  }
 }
 
 .generado{
@@ -120,3 +193,5 @@ ion-button {
 .espacio{
   height: 3em;
 }
+
+

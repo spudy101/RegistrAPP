@@ -76,7 +76,7 @@
       </ion-select>
     </ion-item>
 
-    <ion-button (click)="onClick()" expand="block" fill="clear" shape="round">
+    <ion-button (click)="presentAlert()" expand="block" fill="clear" shape="round">
       Generar QR
     </ion-button>
 
@@ -89,7 +89,7 @@
     </div>
 
     <div class="QR">
-      <h5>Escanea tu codigo aqui</h5>
+      <h5>{{ handlerMessage }}</h5>
       <div class="generado">
         <img src="" alt="">
       </div>

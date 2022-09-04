@@ -18,4 +18,10 @@ export class ConfiguracionesPage implements OnInit {
     this.menu.open('first');
   }
 
+  isModalOpen = false;
+
+  setOpen(isOpen: boolean) {
+    this.isModalOpen = isOpen;
+  }
+
 }
