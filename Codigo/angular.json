@@ -96,8 +96,14 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.spec.json",
             "karmaConfig": "karma.conf.js",
-            "styles": [],
-            "scripts": [],
+            "styles": [
+              "global.scss",
+              "sweetalert2/dist/sweetalert2.scss"
+            ],
+            "scripts": [
+              "sweetalert2/dist/sweetalert2.js",
+              "sweetalert2/dist/sweetalert2.min.js"
+            ],
             "assets": [
               {
                 "glob": "favicon.ico",
@@ -149,7 +155,7 @@
     "schematicCollections": [
       "@ionic/angular-toolkit"
     ],
-    "analytics": "3b54b59d-e370-4891-8569-36054f4be211"
+    "analytics": "b6bc0f01-a400-4845-96d0-bf19ef312576"
   },
   "schematics": {
     "@ionic/angular-toolkit:component": {

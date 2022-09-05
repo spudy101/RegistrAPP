@@ -1,5 +1,7 @@
 {
-  "name": "pgy4121_002",
-  "integrations": {},
+  "name": "QR_proyecto",
+  "integrations": {
+    "capacitor": {}
+  },
   "type": "angular"
 }
