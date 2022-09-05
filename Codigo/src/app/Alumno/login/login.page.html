@@ -11,49 +11,57 @@
 
 
       <div class="contenedor">
-        <ion-item-sliding class="tabla">
-          <ion-item-options side="start">
-            <ion-item-option>
-              <ion-input type="text" placeholder="Ingrese su usuario"></ion-input>
-            </ion-item-option>
-          </ion-item-options>
+        <form #formulario="ngForm" (ngSubmit)="formulario()">
 
-          <ion-item class="usuario" style="height:60px ;">
-            <div class="icono">
-              <img src="assets\icon\usuario.png" alt="">
-            </div>
-            <div class="texto">
-              <ion-label>Usuario</ion-label>
-            </div>
-          </ion-item>
+          <ion-item-sliding class="tabla">
+            <ion-item-options side="start">
+              <ion-item-option>
+                <ion-input [(ngModel)]="usuario.correo" name="correo" type="email" placeholder="correo electronico"
+                  pattern="^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$" required></ion-input>
+              </ion-item-option>
+            </ion-item-options>
 
-        </ion-item-sliding>
+            <ion-item class="usuario" style="height:60px ;">
+              <div class="icono">
+                <img src="assets\icon\usuario.png" alt="">
+              </div>
+              <div class="texto">
+                <ion-label>Usuario</ion-label>
+              </div>
+            </ion-item>
 
-        <div class="correcto" [routerLink]="['/home']">
-          <img src="assets\icon\flecha-correcta.png" alt="">
-        </div>
+          </ion-item-sliding>
 
-        <ion-item-sliding class="tabla">
-          <ion-item-options side="start">
-            <ion-item-option>
-              <ion-input type="text" placeholder="Ingrese su contraseña"></ion-input>
-            </ion-item-option>
-          </ion-item-options>
+          <ion-item-sliding class="tabla">
+            <ion-item-options side="start">
+              <ion-item-option>
+                <ion-input [(ngModel)]="usuario.contrasena" name="contrasena" type="password"
+                  placeholder="contraseña" required>
+                </ion-input>
+              </ion-item-option>
+            </ion-item-options>
 
-          <ion-item class="usuario">
-            <div class="icono">
-              <img src="assets\icon\contrasena.png" alt="">
-            </div>
-            <div class="texto">
-              <ion-label>Contraseña</ion-label>
-            </div>
-          </ion-item>
+            <ion-item class="usuario">
+              <div class="icono">
+                <img src="assets\icon\contrasena.png" alt="">
+              </div>
+              <div class="texto">
+                <ion-label>Contraseña</ion-label>
+              </div>
+            </ion-item>
 
-        </ion-item-sliding>
+          </ion-item-sliding>
 
-        <div class="olvidar">
-          <ion-label>Olvidaste tu contraseña?</ion-label>
-        </div>
+          <div class="correcto">
+            <ion-button [disabled]="formulario.invalid" (click)="mover()">
+              Iniciar sesion
+            </ion-button>
+          </div>
+
+          <div class="olvidar">
+            <ion-label>Olvidaste tu contraseña?</ion-label>
+          </div>
+        </form>
       </div>
 
       <ion-row>

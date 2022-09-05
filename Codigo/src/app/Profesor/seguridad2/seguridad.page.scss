@@ -22,12 +22,49 @@
 }
 
 .foto {
-    margin-left: 3%;
-    transform: translateY(15%);
+    margin-left: 10%;
+    transform: translateY(-20%);
+
 }
 
-.foto img {
-    width: 80%;
+
+.foto .escudo {
+    width: 40%;
+    display: block;
+
+    animation: bounce 0.5s, rotate 0.2;
+    animation-direction: alternate;
+    animation-timing-function: cubic-bezier(.5, 0.05, 1, .5);
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+    animation-duration: 1s;
+
+}
+
+@keyframes bounce {
+    from {
+        transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(0, 25px, 0);
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotateY(0deg);
+    }
+
+    50% {
+        transform: rotateY(360deg);
+    }
+}
+
+
+.foto .mano {
+    width: 70%;
+    transform: translatex(-20%);
 }
 
 .contra_actual {
@@ -40,7 +77,7 @@
     width: 40%;
     float: left;
     margin-left: 4%;
-    transform: translateY(-15%);
+    transform: translateY(-25%);
 }
 
 .fotousu {
@@ -70,7 +107,7 @@ p {
     width: 50%;
     float: right;
     margin-right: 4%;
-    transform: translateY(5%);
+    transform: translateY(-10%);
 }
 
 .cambiar_contra {
@@ -127,6 +164,6 @@ p {
     color: black;
 }
 
-.espacio{
+.espacio {
     height: 3em;
-  }
+}

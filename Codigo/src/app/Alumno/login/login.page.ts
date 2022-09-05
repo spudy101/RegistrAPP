@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-login',
@@ -6,10 +7,25 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./login.page.scss'],
 })
 export class LoginPage implements OnInit {
+  nombre: String;
 
-  constructor() { }
+  usuario = {
+    correo: '',
+    contrasena: ''
+  };
+
+  constructor(private navCtrl: NavController) { }
 
   ngOnInit() {
   }
+
+  formulario(){
+    console.log('form submit');
+  }
+
+  mover(){
+    this.navCtrl.navigateForward("home");
+  }
+
 
 }
