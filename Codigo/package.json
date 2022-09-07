@@ -1,5 +1,5 @@
 {
-  "name": "QR_proyecto",
+  "name": "Proyecto_QR",
   "version": "0.0.1",
   "author": "Ionic Framework",
   "homepage": "https://ionicframework.com/",
@@ -15,8 +15,8 @@
   "dependencies": {
     "@angular/common": "^14.0.0",
     "@angular/core": "^14.0.0",
+    "@angular/fire": "^7.4.1",
     "@angular/forms": "^14.0.0",
-    "@angular/localize": "^14.0.0",
     "@angular/platform-browser": "^14.0.0",
     "@angular/platform-browser-dynamic": "^14.0.0",
     "@angular/router": "^14.0.0",
@@ -26,13 +26,8 @@
     "@capacitor/keyboard": "4.0.1",
     "@capacitor/status-bar": "4.0.1",
     "@ionic/angular": "^6.1.9",
-    "@ng-bootstrap/ng-bootstrap": "^13.0.0",
-    "@popperjs/core": "^2.10.2",
-    "@sweetalert2/ngx-sweetalert2": "^11.0.0",
-    "bootstrap": "^5.2.0",
     "ionicons": "^6.0.3",
     "rxjs": "~6.6.0",
-    "sweetalert2": "^11.4.29",
     "tslib": "^2.2.0",
     "zone.js": "~0.11.4"
   },
@@ -48,7 +43,6 @@
     "@angular/language-service": "^14.0.0",
     "@capacitor/cli": "4.1.0",
     "@ionic/angular-toolkit": "^6.0.0",
-    "@ionic/lab": "3.2.13",
     "@types/jasmine": "~3.6.0",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "^12.11.1",

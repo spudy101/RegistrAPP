@@ -38,7 +38,23 @@
       </div>
 
       <div class="contenedor">
-        <form #formulario="ngForm" (ngSubmit)="formulario()">
+
+          <ion-row class="tabla">
+            <ion-col size="11" class="registrarse">
+              <div class="texto">
+                <div class="icono">
+                  <img src="assets\icon\usuario.png" alt="">
+                </div>
+                <div class="texto">
+                  <ion-label>Nombre de usuario</ion-label>
+                </div>
+              </div>
+              <ion-input [(ngModel)]="profesor.usuario" name="usuario" type="text" placeholder="Escribe tu usuario"
+                 >
+              </ion-input>
+            </ion-col>
+          </ion-row>
+
 
           <ion-row class="tabla">
             <ion-col size="11" class="registrarse">
@@ -50,8 +66,7 @@
                   <ion-label>Correo electronico</ion-label>
                 </div>
               </div>
-              <ion-input [(ngModel)]="usuario.correo" name="correo" type="email" placeholder="Escribe tu Correo Institucional"
-                pattern="^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$" required>
+              <ion-input [(ngModel)]="profesor.correo" name="correo" type="email" placeholder="Escribe tu Correo Institucional">
               </ion-input>
             </ion-col>
           </ion-row>
@@ -66,8 +81,8 @@
                   <ion-label>Contraseña</ion-label>
                 </div>
               </div>
-              <ion-input [(ngModel)]="usuario.contrasena" name="contrasena" type="password"
-                placeholder="Escribe tu contraseña" required>
+              <ion-input [(ngModel)]="profesor.contrasena" name="contrasena" type="password"
+                placeholder="Escribe tu contraseña">
               </ion-input>
             </ion-col>
           </ion-row>
@@ -75,21 +90,21 @@
           <div class="cosas">
 
             <div class="olvidar">
-              <ion-label>Olvidaste tu contraseña?</ion-label>
+              <ion-label></ion-label>
             </div>
             <div class="correcto" >
-              <ion-button [disabled]="formulario.invalid" (click)="mover()">
-                Iniciar sesion
+              <ion-button  (click)="guardar()">
+                Registrarse
               </ion-button>
             </div>
           </div>
-        </form>
+
       </div>
 
       <ion-row class="registro">
-        <ion-col size="12" class="" [routerLink]="['/registrar-p']">
+        <ion-col size="12" class="" [routerLink]="['/login-p']">
           <div class="texto">
-            <ion-label>No tienes cuenta?</ion-label>
+            <ion-label>Ya tienes cuenta?</ion-label>
           </div>
         </ion-col>
       </ion-row>

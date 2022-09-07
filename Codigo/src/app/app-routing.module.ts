@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
-
 const routes: Routes = [
   {
     path: 'home',
@@ -64,14 +63,16 @@ const routes: Routes = [
     path: 'login-p',
     loadChildren: () => import('./Profesor/login-p/login-p.module').then( m => m.LoginPPageModule)
   },
-  
+  {
+    path: 'registrar-p',
+    loadChildren: () => import('./Profesor/registrar-p/registrar-p.module').then( m => m.RegistrarPPageModule)
+  },
 ];
 
 @NgModule({
   imports: [
     RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules })
   ],
-  
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

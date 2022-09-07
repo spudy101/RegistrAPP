@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "rare-inquiry-214521": {
+      "hosting": {
+        "app": [
+          "rare-inquiry-214521"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "rare-inquiry-214521"
+  }
+}

@@ -30,7 +30,10 @@
                 "output": "./svg"
               }
             ],
-            "styles": ["src/theme/variables.scss", "src/global.scss"],
+            "styles": [
+              "src/theme/variables.scss",
+              "src/global.scss"
+            ],
             "scripts": [],
             "aot": false,
             "vendorChunk": true,
@@ -96,14 +99,8 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.spec.json",
             "karmaConfig": "karma.conf.js",
-            "styles": [
-              "global.scss",
-              "sweetalert2/dist/sweetalert2.scss"
-            ],
-            "scripts": [
-              "sweetalert2/dist/sweetalert2.js",
-              "sweetalert2/dist/sweetalert2.min.js"
-            ],
+            "styles": [],
+            "scripts": [],
             "assets": [
               {
                 "glob": "favicon.ico",
@@ -147,6 +144,16 @@
               "devServerTarget": "app:serve:ci"
             }
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "app:build:production",
+            "firebaseProject": "rare-inquiry-214521",
+            "firebaseHostingSite": "rare-inquiry-214521"
+          }
         }
       }
     }
@@ -155,7 +162,7 @@
     "schematicCollections": [
       "@ionic/angular-toolkit"
     ],
-    "analytics": "b6bc0f01-a400-4845-96d0-bf19ef312576"
+    "analytics": "143265c2-db15-437c-9c78-4329dc9ef26a"
   },
   "schematics": {
     "@ionic/angular-toolkit:component": {
