@@ -99,7 +99,7 @@
   padding-top: 10px;
 }
 
-ion-button {
+.boton_generar {
   box-shadow: 1px 1px 1px 1px grey;
   width: 35%;
   color: black;
@@ -140,9 +140,8 @@ ion-button {
 .QR {
   width: 50%;
   margin: auto;
-  margin-top: 3em;
   text-align: center;
-
+  margin-top: 1em;
 }
 
 .QR h5{
@@ -172,7 +171,7 @@ ion-button {
 
 .generado{
   border: solid black 1px;
-  height: 450px;
+  height: 480px;
 }
 
 .botones{

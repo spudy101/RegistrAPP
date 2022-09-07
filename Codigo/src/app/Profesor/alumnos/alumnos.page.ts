@@ -1,6 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { MenuController } from '@ionic/angular';
 import { AlertController } from '@ionic/angular';
+import { IonModal } from '@ionic/angular';
+import { OverlayEventDetail } from '@ionic/core/components';
+
 
 @Component({
   selector: 'app-alumnos',
@@ -8,13 +11,14 @@ import { AlertController } from '@ionic/angular';
   styleUrls: ['./alumnos.page.scss'],
 })
 export class AlumnosPage implements OnInit {
+  @ViewChild(IonModal) modal: IonModal;
 
-  constructor(private menu: MenuController, private alertController: AlertController) {}
+  constructor(private menu: MenuController, private alertController: AlertController) { }
 
   ngOnInit() {
   }
 
-  openMenu(){
+  openMenu() {
     this.menu.toggle("second")
   }
 
@@ -54,6 +58,24 @@ export class AlumnosPage implements OnInit {
     });
 
     await alert.present();
+  }
+
+  message = '';
+  fecha: string;
+
+  cancel() {
+    this.modal.dismiss(null, 'cancel');
+  }
+
+  confirm() {
+    this.modal.dismiss(this.fecha, 'confirm');
+  }
+
+  onWillDismiss(event: Event) {
+    const ev = event as CustomEvent<OverlayEventDetail<string>>;
+    if (ev.detail.role === 'confirm') {
+      this.message = `${ev.detail.data}`;
+    }
   }
 }
 

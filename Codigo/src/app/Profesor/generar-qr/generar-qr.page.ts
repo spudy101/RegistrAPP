@@ -9,6 +9,7 @@ import { AlertController } from '@ionic/angular';
 })
 export class GenerarQrPage implements OnInit {
   handlerMessage = '';
+  imagen = '';
   roleMessage = '';
 
   constructor(private menu: MenuController, private alertController: AlertController) {
@@ -40,6 +41,7 @@ export class GenerarQrPage implements OnInit {
           role: 'confirm',
           handler: () => {
             this.handlerMessage = 'Escanea tu codigo Aqui';
+            this.imagen = 'QR';
           },
         },
       ],
