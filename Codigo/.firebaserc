@@ -6,9 +6,16 @@
           "rare-inquiry-214521"
         ]
       }
+    },
+    "qrapp-87e95": {
+      "hosting": {
+        "app": [
+          "qrapp-87e95"
+        ]
+      }
     }
   },
   "projects": {
-    "default": "rare-inquiry-214521"
+    "default": "qrapp-87e95"
   }
 }

@@ -151,8 +151,8 @@
             "prerender": false,
             "ssr": false,
             "browserTarget": "app:build:production",
-            "firebaseProject": "rare-inquiry-214521",
-            "firebaseHostingSite": "rare-inquiry-214521"
+            "firebaseProject": "qrapp-87e95",
+            "firebaseHostingSite": "qrapp-87e95"
           }
         }
       }
