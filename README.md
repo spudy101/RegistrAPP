@@ -7,5 +7,14 @@ npm install
 --ultima version de angular
 npm install -g @angular/cli@latest
 
+--materialize
+ng add @angular/material
+
+--storage ionic
+npm install --save @ionic/storage
+
+--
+npm install @ionic-native/http
+
 --firebase (seleccionar firestore)
-ng add @angular/fire
+npm install @angular/fire firebase --save
