@@ -18,3 +18,18 @@ npm install @ionic-native/http
 
 --firebase (seleccionar firestore)
 npm install @angular/fire firebase --save
+
+--qr/scanner
+npm install @capacitor-community/barcode-scanner
+
+npm install angularx-qrcode --save
+
+--cordova
+npm i cordova-plugin-geolocation
+
+npm install @ionic-native/core --save
+
+--paquetes de comunicacion
+npm install @ionic-native/geolocation@5.0.0-beta.21
+
+npm install @ionic-native/geolocation --save
